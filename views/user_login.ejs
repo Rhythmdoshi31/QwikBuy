@@ -1,0 +1,21 @@
+<%- include('./partials/header'); %>
+
+    <body class="h-screen w-screen flex items-center justify-center bg-gray-100">
+
+        <div class="relative h-full w-full p-2 md:p-5 lg:p-10">
+            <!-- Full-screen Image -->
+            <img src="/images/banner.jpeg" alt="Background Image" class="object-cover rounded-3xl w-full h-full">
+
+            <!-- Button at the Bottom -->
+            <div class="absolute top-[47%] left-[49%] translate-x-[-50%] translate-y-[-50%] flex flex-col justify-center items-center">
+                <h1 class="text-white text-5xl font-black hover:text-black transition duration-200">QwikBuy</h1>
+                <a href="/auth/google"
+                    class="bg-black text-white mt-3 font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition duration-200 shadow-2xl">
+                    Continue with Google
+                </a>
+            </div>
+        </div>
+
+    </body>
+
+    <%- include('./partials/footer'); %>
