@@ -32,6 +32,8 @@ const cartRouter = require("./routes/cart");
 const paymentRouter = require("./routes/payment");
 const orderRouter = require("./routes/order")
 
+console.log(process.env.GOOGLE_CALLBACK_URL)
+
 app.use("/", indexRouter);
 app.use("/auth", authRouter);
 app.use("/admin", adminRouter);

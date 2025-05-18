@@ -10,7 +10,6 @@ passport.use(new GoogleStrategy({
   },
   async function(accessToken, refreshToken, profile, cb) {
     try {
-        console.log("")
         let user = await userModel.findOne({ email: profile.emails[0].value });
 
         if (!user) {
