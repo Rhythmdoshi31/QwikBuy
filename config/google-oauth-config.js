@@ -5,11 +5,12 @@ const passport = require("passport");
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "https://qwikbuy-production.up.railway.app/auth/google/callback",
+    callbackURL: process.env.GOOGLE_CALLBACK_URL,
     scope: ['profile', 'email'],
   },
   async function(accessToken, refreshToken, profile, cb) {
     try {
+        console.log("")
         let user = await userModel.findOne({ email: profile.emails[0].value });
 
         if (!user) {
