@@ -1,5 +1,7 @@
 # 🛒 QwikBuy — A Fast and Modern E-Commerce Platform
 
+View Live - link[https://qwikbuy-production.up.railway.app/users/login]
+
 QwikBuy is a full-stack e-commerce web application inspired by Blinkit, built using **Node.js**, **Express.js**, **MongoDB**, and **EJS**. It supports product management, cart and checkout workflows, and real-time delivery tracking with Leaflet maps and payment integration using Razorpay.
 
 ---
